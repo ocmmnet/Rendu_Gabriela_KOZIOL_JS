@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>HevenlyNight</title>
+  </head>
+  <body>
+    <header>
+      <button id="button-header" onclick="redirectToAcceuil()">
+        <img id="logo" src="images/logo.png" alt="logo" />
+      </button>
+    </header>
+    <main>
+      MAIL : HevenlyNight@gemail.com
+      <button id="button-header" onclick="redirectToPage2()">Términer</button>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      function redirectToAcceuil() {
+        window.location.href = "index.html";
+      }
+      function redirectToPage2() {
+        window.location.href = "Page2.html";
+      }
+    </script>
+  </body>
+</html>

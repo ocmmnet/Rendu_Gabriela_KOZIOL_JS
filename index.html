@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <button id="button-header" onclick="redirectToAcceuil()">
+          <img id="logo" src="images/logo.png" alt="logo" />
+        </button>
+      </div>
+    </header>
+
+    <button id="theme">Dark mode</button>
+
+    
+    <div class="titre1">
+      <h1 class="titre1">Heavenly Night</h1>
+    </div>
+    <div class="description">
+      «Heavenly Night» est une marque de vêtements streetwear emblématique,
+      capturant l’essence mystique et élégante de la nuit à travers une palette
+      de couleurs principalement noire, grise et blanche.<br />
+      La fusion de ces teintes crée une esthétique sophistiquée et intemporelle,
+      représentant la dualité entre la lumière et l’obscurité, la subtilité et
+      la force.<br />
+
+      Les collections de «Heavenly Night» incarnent le minimalisme contemporain,
+      en utilisant principalement des nuances de noir profond, de gris foncé et
+      de blanc pur.<br />
+      Les vêtements incluent des pièces polyvalentes telles que des sweats à
+      capuche aux motifs abstraits en nuances de gris, des pantalons de jogging
+      minimalistes avec des touches de blanc et des t-shirts aux détails
+      subtils.<br />
+
+      Chaque pièce est conçue pour capturer l’élégance discrète, mettant en
+      valeur des détails raffinés comme des coutures contrastées, des logos ton
+      sur ton et des designs épurés.<br />
+      L’utilisation de tissus de haute qualité et de coupes sophistiquées crée
+      un équilibre entre le style urbain et le confort décontracté.<br />
+
+      L’image de marque de «Heavenly Night» mettent en avant la beauté
+      intemporelle de ces couleurs monochromes, soulignant l’individualité et
+      l’assurance dans le choix de vêtements épurés,<br />
+      offrant une expression personnelle unique au sein de la palette restreinte
+      mais dynamique de noir, gris et blanc.
+    </div>
+    
+
+    <button class="button_page2" onclick="redirectToPage2()">BUY NOW!</button>
+
+    <div class="swipper mon-slider" id="mon-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/image1.png" alt="lexus" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/image2.png" alt="skyline" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/image3.png" alt="Supra" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/image4.png" alt="Supra" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/image5.png" alt="Supra" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/image6.png" alt="Supra" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <main class="portfolio">
+      <div class="filters">
+        <ul>
+          <li data-filter="all" class="active">TOUTES LES PROPOSITIONS</li>
+          <li data-filter="cd">HOODIES</li>
+          <li data-filter="cm">PANTS</li>
+          <li data-filter="cdi">T-SHIRTS</li>
+          <li data-filter="3d">ACCESOIRES</li>
+          <li data-filter="jv">TOP</li>
+        </ul>
+      </div>
+      <div class="portfolio-elements">
+        <div class="card filtr-item" data-category="cd">
+          <div class="card-header">
+            <p class="card-title">HOODIES</p>
+            <div class="card-axe">HOODIES</div>
+          </div>
+          
+        </div>
+        <div class="card filtr-item" data-category="3d">
+          <div class="card-header">
+            <p class="card-title">ACCESOIRES</p>
+            <div class="card-axe">ACCESOIRES</div>
+          </div>
+        </div>
+
+        <div class="card filtr-item" data-category="jv">
+          <div class="card-header">
+            <p class="card-title">TOP</p>
+            <div class="card-axe">TOP</div>
+          </div>
+        </div>
+        <div class="card filtr-item" data-category="cdi">
+          <div class="card-header">
+            <p class="card-title">T-SHIRT</p>
+            <div class="card-axe">T-SHIRTS</div>
+          </div>
+        </div>
+        <div class="card filtr-item" data-category="cm">
+          <div class="card-header">
+            <p class="card-title">PANTS</p>
+            <div class="card-axe">PANTS</div>
+          </div>
+        </div>
+      </div>
+      <div class="message-success">
+        <h1>Votre formulaire a bien été envoyé</h1>
+      </div>
+      <div class="message-error">
+        <ul></ul>
+      </div>
+      <form id="formulaire" novalidate>
+        <h1>INSCRIS-TOI</h1>
+        <div>
+          <label for="nom">Nom</label>
+          <input type="text" name="nom" id="nom" />
+        </div>
+        <div>
+          <label for="pseudo">Prénom</label>
+          <input type="text" name="pseudo" id="pseudo" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="radios"
+            >homme :
+            <input type="radio" name="radios" id="radio1" value="radio1"
+          /></label>
+          <label for="radio1"
+            >femme :
+            <input type="radio" name="radios" id="radio2" value="radio2"
+          /></label>
+          <label for="radio2"
+            >autre.. :
+            <input type="radio" name="radios" id="radio3" value="radio3"
+          /></label>
+        </div>
+        <div>
+          <label for="axe">ma taille :</label>
+          <select name="axe" id="axe">
+            <option value="">choisis ta taille</option>
+            <option value="axe1">XS</option>
+            <option value="axe2">S</option>
+            <option value="axe3">M</option>
+            <option value="axe4">L</option>
+            <option value="axe5">XL</option>
+          </select>
+        </div>
+
+        <button type="submit">S'inscrire</button>
+      </form>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      function redirectToAcceuil() {
+        window.location.href = "index.html";
+      }
+      function redirectToPage2() {
+        window.location.href = "Page2.html";
+      }
+      function scrollToTop() {
+        window.scrollTo(0, 0);
+      }
+    </script>
+  </body>
+</html>
